@@ -1,0 +1,8 @@
+.DS_Store
+proj.win32/Debug.win32/*
+proj.win32/FlappyBird.sdf
+proj.win32/FlappyBird.IsolatorCache
+proj.win32/FlappyBird.opensdf
+proj.win32/FlappyBird.v11.suo
+proj.win32/Debug.win32/FlappyBird.vcxproj.user
+proj.win32/Release.win32/*
