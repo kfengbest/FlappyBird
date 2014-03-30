@@ -415,13 +415,14 @@ void Terrain::draw(Renderer *renderer, const kmMat4& transform, bool transformUp
         {
             setShaderProgram(ShaderCache::getInstance()->getProgram(GLProgram::SHADER_NAME_POSITION_TEXTURE));
             CC_NODE_DRAW_SETUP();
-
+           
             Texture2D* tex = mStripes->getTexture();
             glBindTexture(GL_TEXTURE_2D, tex->getName());	
             mHillVertices.DrawArrays(GL_TRIANGLE_STRIP, 0, (GLsizei)nHillVertices);            
 
             /// draw the hill border
-            //renderBorder();
+            renderBorder();
+
             glBindTexture(GL_TEXTURE_2D, 0);	
         }        
     };

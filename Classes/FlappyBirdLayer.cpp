@@ -84,7 +84,7 @@ void FlappyBirdLayer::onEnter()
     // create the terrain the left 
     {
         auto terrain = Terrain::create();
-        //this->addChild(terrain, DEPTH_BACKGROUND, TAG_TERRAIN);
+        this->addChild(terrain, DEPTH_BACKGROUND, TAG_TERRAIN);
     }
 
     // touch

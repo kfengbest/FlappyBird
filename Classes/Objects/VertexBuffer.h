@@ -40,10 +40,13 @@ template <typename _Vertex>
         INLINE void Activate() 
         {
 			int bits = formatBits();	
+            /// cocos2dx is using static members inside its sucking code, 
+            /// we have to use its API to enable/disable the vertex buffer format
+            GL::enableVertexAttribs(bits);
 			if (bits & GL::VERTEX_ATTRIB_FLAG_POSITION) {
-                VertexAttribPointer(GLProgram::VERTEX_ATTRIB_POSITION);				
+                VertexAttribPointer(GLProgram::VERTEX_ATTRIB_POSITION);
 			}
-
+            
 			if (bits & GL::VERTEX_ATTRIB_FLAG_COLOR) {
                 VertexAttribPointer(GLProgram::VERTEX_ATTRIB_COLOR);
 			}
@@ -74,7 +77,7 @@ template <typename _Vertex>
 
         INLINE void VertexAttribPointer(int index)
         {
-            glEnableVertexAttribArray(index);
+            //glEnableVertexAttribArray(index);
             CHECK_GL_ERROR_DEBUG();
             glVertexAttribPointer(index, VertexTraits::Size(index), VertexTraits::Type(index), 
                     VertexTraits::Normalized(index), sizeof(vertex_type), (void*)VertexTraits::Offset(index));
@@ -202,7 +205,7 @@ template <typename _Vertex>
         /// <description>
         INLINE void Deactivate() 
         {
-            mVertexFormat->Deactivate();
+            //mVertexFormat->Deactivate();
             glBindBuffer(GL_ARRAY_BUFFER, 0);
             CHECK_GL_ERROR_DEBUG();
             glBindVertexArray(0);
