@@ -61,7 +61,7 @@ bool WelcomeScene::init()
 	return false;
 }
 
-void WelcomeScene::start(Object* pSender)
+void WelcomeScene::start(cocos2d::Object* pSender)
 {
     Director::getInstance()->replaceScene(FlappyBirdLayer::createScene());
 }

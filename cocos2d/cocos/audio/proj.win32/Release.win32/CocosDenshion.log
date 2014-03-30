@@ -1,0 +1,20 @@
+﻿Build started 30/3/2014 3:35:07 PM.
+     1>Project "F:\Games\FlappyBird\cocos2d\cocos\audio\proj.win32\CocosDenshion.vcxproj" on node 4 (Build target(s)).
+     1>InitializeBuildStatus:
+         Creating "Release.win32\libAudio.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /I"C:\Program Files (x86)\Microsoft SDKs\Windows\v7.1A\include" /I..\Include /IF:\Games\FlappyBird\cocos2d\cocos\2d\..\..\cocos\2d /IF:\Games\FlappyBird\cocos2d\cocos\2d\..\..\cocos\2d\renderer /IF:\Games\FlappyBird\cocos2d\cocos\2d\..\..\cocos\gui /IF:\Games\FlappyBird\cocos2d\cocos\2d\..\..\cocos\base /IF:\Games\FlappyBird\cocos2d\cocos\2d\..\..\cocos\physics /IF:\Games\FlappyBird\cocos2d\cocos\2d\..\..\cocos\math\kazmath /IF:\Games\FlappyBird\cocos2d\cocos\2d\..\..\cocos\2d\platform\win32 /IF:\Games\FlappyBird\cocos2d\cocos\2d\..\..\cocos\2d\platform\desktop /IF:\Games\FlappyBird\cocos2d\cocos\2d\..\..\external\glfw3\include\win32 /I"F:\Games\FlappyBird\cocos2d\cocos\2d\..\..\external\win32-specific\gles\include\OGLES" /Zi /nologo /W3 /WX- /MP /O2 /Oy- /D WIN32 /D NDEBUG /D _WINDOWS /D _CRT_SECURE_NO_WARNINGS /D _VARIADIC_MAX=10 /D _USING_V110_SDK71_ /Gm- /EHsc /MD /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Release.win32\\" /Fd"Release.win32\vc110.pdb" /Gd /TP /wd4251 /analyze- /errorReport:prompt ..\win32\MciPlayer.cpp ..\win32\SimpleAudioEngine.cpp
+         MciPlayer.cpp
+         SimpleAudioEngine.cpp
+       Lib:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\Lib.exe /OUT:"F:\Games\FlappyBird\proj.win32\Release.win32\libAudio.lib" /NOLOGO Release.win32\MciPlayer.obj
+         Release.win32\SimpleAudioEngine.obj
+         CocosDenshion.vcxproj -> F:\Games\FlappyBird\proj.win32\Release.win32\libAudio.lib
+       FinalizeBuildStatus:
+         Deleting file "Release.win32\libAudio.unsuccessfulbuild".
+         Touching "Release.win32\libAudio.lastbuildstate".
+     1>Done Building Project "F:\Games\FlappyBird\cocos2d\cocos\audio\proj.win32\CocosDenshion.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:15.36

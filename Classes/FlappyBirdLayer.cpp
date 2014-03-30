@@ -47,7 +47,7 @@ void FlappyBirdLayer::onEnter()
 
     // create background 
     auto bkg = Sprite::create(bird_bg);
-    this->addChild(bkg);        
+    this->addChild(bkg,DEPTH_SKY, TAG_SKY);
     bkg->setPosition(size.width/2, size.height/2);
        
     // ground object
@@ -60,7 +60,7 @@ void FlappyBirdLayer::onEnter()
         body->setDynamic(false);        
         ground->setPhysicsBody(body);
         body->setCollisionBitmask(1);
-        this->addChild(ground, 2, TAG_GROUND);
+        this->addChild(ground, DEPTH_FOREGROUND, TAG_GROUND);
     }
    
     // Game Over logo
@@ -68,18 +68,24 @@ void FlappyBirdLayer::onEnter()
         auto overLogo = Sprite::create(bird_gameover);
         overLogo->setPosition(Point(size.width / 2, size.height / 2 + overLogo->getContentSize().height));
         overLogo->setVisible(false);
-        this->addChild(overLogo, 1, TAG_GAMEOVER);
+        this->addChild(overLogo, DEPTH_UI, TAG_GAMEOVER);
     }
-   
+    
     // score
     auto score = LabelBMFont::create("0", score_font);
     score->setPosition(Point(size.width / 2, size.height / 4 * 3));
-    addChild(score, 1, TAG_SCORE);
+    addChild(score, DEPTH_UI, TAG_SCORE);
     score->setVisible(false);
     
     // Obstacles
     obstacle = Node::create();
-    this->addChild(obstacle);
+    this->addChild(obstacle, DEPTH_GAME_LAYER, TAG_OBSTACLE);
+
+    // create the terrain the left 
+    {
+        auto terrain = Terrain::create();
+        //this->addChild(terrain, DEPTH_BACKGROUND, TAG_TERRAIN);
+    }
 
     // touch
     auto dispatcher = Director::getInstance()->getEventDispatcher();
@@ -90,7 +96,7 @@ void FlappyBirdLayer::onEnter()
     dispatcher->addEventListenerWithSceneGraphPriority(listener, this);
     // for physic events
     auto contact = EventListenerPhysicsContact::create();
-    contact->onContactBegin = CC_CALLBACK_2(FlappyBirdLayer::onContactBegin,this);
+    contact->onContactBegin = CC_CALLBACK_1(FlappyBirdLayer::onContactBegin,this);
     dispatcher->addEventListenerWithSceneGraphPriority(contact, this);
 
     // init status
@@ -123,10 +129,18 @@ Sprite* FlappyBirdLayer::Hero()
         body->setDynamic(true);
         body->setCollisionBitmask(1);
         hero->setPhysicsBody(body);
-        this->addChild(hero, 1, TAG_HERO);
+        this->addChild(hero, DEPTH_GAME_LAYER, TAG_HERO);
     }
 
     return hero;
+}
+
+/// <description>
+/// get the terrain object
+/// </description>
+Terrain* FlappyBirdLayer::getTerrain()
+{
+    return (Terrain*)this->getChildByTag(TAG_TERRAIN);
 }
 
 /// <description>
@@ -154,7 +168,8 @@ void FlappyBirdLayer::update(float time)
 	{
 	case GAME_STATUS_PLAYING:
         {
-            int heroX = Hero()->getPositionX() - Hero()->getContentSize().width;
+            float x = Hero()->getPositionX();
+            int heroX  = x - Hero()->getContentSize().width;
             Rect rHero = ((Sprite*)Hero())->getBoundingBox();
 
             /// update the score and obstacle positions
@@ -178,6 +193,7 @@ void FlappyBirdLayer::update(float time)
                 }
             });
             
+            getTerrain()->setOffsetX(-x);
             setScore(score/2);
             break;
         }
@@ -210,6 +226,7 @@ void FlappyBirdLayer::addObstacle(float tm)
     //body->setVelocity(Vect(-3,0));
     sprite->setPhysicsBody(body);
     body->setCollisionBitmask(1);
+    //obstacle->setLocalZOrder(DEPTH_GAME_LAYER);
     obstacle->addChild(sprite);
     
 	auto sprite2 = Sprite::create(bird_obstacle_down);
@@ -219,6 +236,7 @@ void FlappyBirdLayer::addObstacle(float tm)
     //body->setVelocity(Vect(-3,0));
     body->setCollisionBitmask(1);
     sprite2->setPhysicsBody(body);
+    //obstacle->setLocalZOrder(DEPTH_GAME_LAYER);
     obstacle->addChild(sprite2);
     
     int offsetY = spriteSize.height / 4;
@@ -340,7 +358,7 @@ void FlappyBirdLayer::onTouchesEnded(const vector<Touch*>& touches, Event* event
 	}
 }
 
-bool FlappyBirdLayer::onContactBegin(EventCustom* event, const PhysicsContact& contact)
+bool FlappyBirdLayer::onContactBegin(PhysicsContact& contact)
 {
    Node* pNodeA = contact.getShapeA()->getBody()->getNode();
    Node* pNodeB = contact.getShapeB()->getBody()->getNode();

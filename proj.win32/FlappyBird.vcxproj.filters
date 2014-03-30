@@ -10,6 +10,15 @@
     <Filter Include="resource">
       <UniqueIdentifier>{715254bc-d70b-4ec5-bf29-467dd3ace079}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Classes\NAGA">
+      <UniqueIdentifier>{1f648e02-3e62-4bea-848b-fb6a509d40f5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\Objects">
+      <UniqueIdentifier>{52fa8390-18ee-484a-8a08-e8c5a3d4f6a6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\Util">
+      <UniqueIdentifier>{ccbd86b4-a520-4993-b33a-aaaa75a58960}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -23,6 +32,39 @@
     </ClCompile>
     <ClCompile Include="..\Classes\WelcomeScene.cpp">
       <Filter>Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Naga\MemPool.cpp">
+      <Filter>Classes\NAGA</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Naga\Object.cpp">
+      <Filter>Classes\NAGA</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Naga\UniqueString.cpp">
+      <Filter>Classes\NAGA</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Naga\Utility.cpp">
+      <Filter>Classes\NAGA</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Objects\DynamicTexture.cpp">
+      <Filter>Classes\Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Objects\Framebuffer.cpp">
+      <Filter>Classes\Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Objects\HSV.cpp">
+      <Filter>Classes\Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Objects\Sky.cpp">
+      <Filter>Classes\Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Objects\Terrain.cpp">
+      <Filter>Classes\Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Objects\TextureGenerator.cpp">
+      <Filter>Classes\Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Util\PhysicsHelper.cpp">
+      <Filter>Classes\Util</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -40,6 +82,75 @@
     </ClInclude>
     <ClInclude Include="..\Classes\Impl.h">
       <Filter>Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Naga\BitStatus.h">
+      <Filter>Classes\NAGA</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Naga\Constants.h">
+      <Filter>Classes\NAGA</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Naga\InterfaceID.h">
+      <Filter>Classes\NAGA</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Naga\MemPool.h">
+      <Filter>Classes\NAGA</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Naga\NagaLib.h">
+      <Filter>Classes\NAGA</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Naga\Object.h">
+      <Filter>Classes\NAGA</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Naga\Platform.h">
+      <Filter>Classes\NAGA</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Naga\RefCounted.h">
+      <Filter>Classes\NAGA</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Naga\Singleton.h">
+      <Filter>Classes\NAGA</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Naga\SmartPointer.h">
+      <Filter>Classes\NAGA</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Naga\StdInclude.h">
+      <Filter>Classes\NAGA</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Naga\UniqueString.h">
+      <Filter>Classes\NAGA</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Naga\Utility.h">
+      <Filter>Classes\NAGA</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Objects\DynamicTexture.h">
+      <Filter>Classes\Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Objects\Framebuffer.h">
+      <Filter>Classes\Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Objects\Random.h">
+      <Filter>Classes\Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Objects\Sky.h">
+      <Filter>Classes\Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Objects\Terrain.h">
+      <Filter>Classes\Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Objects\TextureGenerator.h">
+      <Filter>Classes\Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Objects\VertexBuffer.h">
+      <Filter>Classes\Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Objects\VertexTraits.h">
+      <Filter>Classes\Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Objects\VertexTypes.h">
+      <Filter>Classes\Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Util\PhysicsHelper.h">
+      <Filter>Classes\Util</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

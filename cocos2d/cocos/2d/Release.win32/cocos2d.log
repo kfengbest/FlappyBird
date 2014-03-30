@@ -1,0 +1,382 @@
+﻿Build started 30/3/2014 3:35:06 PM.
+     1>Project "F:\Games\FlappyBird\cocos2d\cocos\2d\cocos2d.vcxproj" on node 2 (Build target(s)).
+     1>InitializeBuildStatus:
+         Creating "Release.win32\libcocos2d.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /I"C:\Program Files (x86)\Microsoft SDKs\Windows\v7.1A\include" /IF:\Games\FlappyBird\cocos2d\cocos\2d\..\..\external\sqlite3\include /IF:\Games\FlappyBird\cocos2d\cocos\2d\..\..\external\unzip /IF:\Games\FlappyBird\cocos2d\cocos\2d\..\..\external\edtaa3func /IF:\Games\FlappyBird\cocos2d\cocos\2d\..\..\external\tinyxml2 /IF:\Games\FlappyBird\cocos2d\cocos\2d\..\..\external\png\include\win32 /IF:\Games\FlappyBird\cocos2d\cocos\2d\..\..\external\jpeg\include\win32 /IF:\Games\FlappyBird\cocos2d\cocos\2d\..\..\external\tiff\include\win32 /IF:\Games\FlappyBird\cocos2d\cocos\2d\..\..\external\webp\include\win32 /IF:\Games\FlappyBird\cocos2d\cocos\2d\..\..\external\freetype2\include\win32 /I"F:\Games\FlappyBird\cocos2d\cocos\2d\..\..\external\win32-specific\icon\include" /I"F:\Games\FlappyBird\cocos2d\cocos\2d\..\..\external\win32-specific\zlib\include" /IF:\Games\FlappyBird\cocos2d\cocos\2d\..\..\external\chipmunk\include\chipmunk /IF:\Games\FlappyBird\cocos2d\cocos\2d\..\..\cocos\2d /IF:\Games\FlappyBird\cocos2d\cocos\2d\..\..\cocos\2d\renderer /IF:\Games\FlappyBird\cocos2d\cocos\2d\..\..\cocos\gui /IF:\Games\FlappyBird\cocos2d\cocos\2d\..\..\cocos\base /IF:\Games\FlappyBird\cocos2d\cocos\2d\..\..\cocos\physics /IF:\Games\FlappyBird\cocos2d\cocos\2d\..\..\cocos\math\kazmath /IF:\Games\FlappyBird\cocos2d\cocos\2d\..\..\cocos\2d\platform\win32 /IF:\Games\FlappyBird\cocos2d\cocos\2d\..\..\cocos\2d\platform\desktop /IF:\Games\FlappyBird\cocos2d\cocos\2d\..\..\external\glfw3\include\win32 /I"F:\Games\FlappyBird\cocos2d\cocos\2d\..\..\external\win32-specific\gles\include\OGLES" /Zi /nologo /W3 /WX- /MP /O2 /Oy- /D WIN32 /D NDEBUG /D _WINDOWS /D _LIB /D COCOS2DXWIN32_EXPORTS /D GL_GLEXT_PROTOTYPES /D _CRT_SECURE_NO_WARNINGS /D _SCL_SECURE_NO_WARNINGS /D _VARIADIC_MAX=10 /D _USING_V110_SDK71_ /D _UNICODE /D UNICODE /Gm- /EHsc /MD /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Release.win32\\" /Fd"Release.win32\vc110.pdb" /Gd /TP /wd4267 /wd4251 /wd4244 /analyze- /errorReport:prompt ..\..\external\edtaa3func\edtaa3func.cpp ..\..\external\tinyxml2\tinyxml2.cpp ..\..\external\unzip\ioapi.cpp ..\..\external\unzip\unzip.cpp ..\base\atitc.cpp ..\base\CCAffineTransform.cpp ..\base\CCArray.cpp ..\base\CCAutoreleasePool.cpp ..\base\CCConsole.cpp ..\base\CCData.cpp ..\base\CCDataVisitor.cpp ..\base\CCDictionary.cpp ..\base\CCGeometry.cpp ..\base\CCNS.cpp ..\base\CCRef.cpp ..\base\CCSet.cpp ..\base\CCString.cpp ..\base\CCValue.cpp ..\base\etc1.cpp ..\base\s3tc.cpp ..\math\kazmath\kazmath\aabb.c ..\math\kazmath\kazmath\GL\mat4stack.c ..\math\kazmath\kazmath\GL\matrix.c ..\math\kazmath\kazmath\mat3.c ..\math\kazmath\kazmath\mat4.c ..\math\kazmath\kazmath\neon_matrix_impl.c ..\math\kazmath\kazmath\plane.c ..\math\kazmath\kazmath\quaternion.c ..\math\kazmath\kazmath\ray2.c ..\math\kazmath\kazmath\ray3.c ..\math\kazmath\kazmath\utility.c ..\math\kazmath\kazmath\vec2.c ..\math\kazmath\kazmath\vec3.c ..\math\kazmath\kazmath\vec4.c ..\physics\CCPhysicsBody.cpp ..\physics\CCPhysicsContact.cpp ..\physics\CCPhysicsJoint.cpp ..\physics\CCPhysicsShape.cpp ..\physics\CCPhysicsWorld.cpp ..\physics\chipmunk\CCPhysicsBodyInfo_chipmunk.cpp ..\physics\chipmunk\CCPhysicsContactInfo_chipmunk.cpp ..\physics\chipmunk\CCPhysicsJointInfo_chipmunk.cpp ..\physics\chipmunk\CCPhysicsShapeInfo_chipmunk.cpp ..\physics\chipmunk\CCPhysicsWorldInfo_chipmunk.cpp base64.cpp CCAction.cpp CCActionCamera.cpp CCActionCatmullRom.cpp CCActionEase.cpp CCActionGrid.cpp CCActionGrid3D.cpp CCActionInstant.cpp CCActionInterval.cpp CCActionManager.cpp CCActionPageTurn3D.cpp CCActionProgressTimer.cpp CCActionTiledGrid.cpp CCActionTween.cpp CCAnimation.cpp CCAnimationCache.cpp CCAtlasNode.cpp ccCArray.cpp CCClippingNode.cpp CCComponent.cpp CCComponentContainer.cpp CCConfiguration.cpp CCDeprecated.cpp CCDirector.cpp CCDrawingPrimitives.cpp CCDrawNode.cpp CCEvent.cpp CCEventAcceleration.cpp CCEventCustom.cpp CCEventDispatcher.cpp CCEventKeyboard.cpp CCEventListener.cpp CCEventListenerAcceleration.cpp CCEventListenerCustom.cpp CCEventListenerKeyboard.cpp CCEventListenerMouse.cpp CCEventListenerTouch.cpp CCEventMouse.cpp CCEventTouch.cpp CCFont.cpp CCFontAtlas.cpp CCFontAtlasCache.cpp CCFontCharMap.cpp CCFontFNT.cpp CCFontFreeType.cpp ccFPSImages.c CCGLProgram.cpp ccGLStateCache.cpp CCGrabber.cpp CCGrid.cpp CCNodeGrid.cpp CCIMEDispatcher.cpp CCLabel.cpp CCLabelAtlas.cpp CCLabelBMFont.cpp CCLabelTextFormatter.cpp CCLabelTTF.cpp CCLayer.cpp CCMenu.cpp CCMenuItem.cpp CCMotionStreak.cpp CCNode.cpp CCNotificationCenter.cpp CCParallaxNode.cpp CCParticleBatchNode.cpp CCParticleExamples.cpp CCParticleSystem.cpp CCParticleSystemQuad.cpp CCProfiling.cpp CCProgressTimer.cpp CCRenderTexture.cpp CCScene.cpp CCScheduler.cpp CCScriptSupport.cpp CCShaderCache.cpp ccShaders.cpp CCSprite.cpp CCSpriteBatchNode.cpp CCSpriteFrame.cpp CCSpriteFrameCache.cpp CCTextFieldTTF.cpp CCTexture2D.cpp CCTextureAtlas.cpp CCTextureCache.cpp CCTileMapAtlas.cpp CCTMXLayer.cpp CCTMXObjectGroup.cpp CCTMXTiledMap.cpp CCTMXXMLParser.cpp CCTouch.cpp CCTransition.cpp CCTransitionPageTurn.cpp CCTransitionProgress.cpp ccTypes.cpp CCTweenFunction.cpp CCUserDefault.cpp ccUTF8.cpp ccUtils.cpp CCVertex.cpp cocos2d.cpp platform\CCGLViewProtocol.cpp platform\CCFileUtils.cpp platform\CCImage.cpp platform\CCSAXParser.cpp platform\CCThread.cpp platform\desktop\CCGLView.cpp platform\win32\CCApplication.cpp platform\win32\CCCommon.cpp platform\win32\CCDevice.cpp platform\win32\CCFileUtilsWin32.cpp platform\win32\CCStdC.cpp renderer\CCBatchCommand.cpp renderer\CCCustomCommand.cpp renderer\CCFrustum.cpp renderer\CCGroupCommand.cpp renderer\CCMaterialManager.cpp renderer\CCQuadCommand.cpp renderer\CCRenderCommand.cpp renderer\CCRenderer.cpp renderer\CCRenderMaterial.cpp TGAlib.cpp TransformUtils.cpp ZipUtils.cpp
+         edtaa3func.cpp
+         tinyxml2.cpp
+         ioapi.cpp
+         unzip.cpp
+         atitc.cpp
+         CCAffineTransform.cpp
+         CCArray.cpp
+         CCAutoreleasePool.cpp
+         CCConsole.cpp
+         CCData.cpp
+         CCDataVisitor.cpp
+         CCDictionary.cpp
+         CCGeometry.cpp
+         CCNS.cpp
+         CCRef.cpp
+         CCSet.cpp
+         CCString.cpp
+         CCValue.cpp
+         etc1.cpp
+         s3tc.cpp
+         aabb.c
+         mat4stack.c
+         matrix.c
+         mat3.c
+         mat4.c
+         neon_matrix_impl.c
+         plane.c
+         quaternion.c
+         ray2.c
+         ray3.c
+         utility.c
+         vec2.c
+         vec3.c
+         vec4.c
+         CCPhysicsBody.cpp
+         CCPhysicsContact.cpp
+         CCPhysicsJoint.cpp
+         CCPhysicsShape.cpp
+         CCPhysicsWorld.cpp
+         CCPhysicsBodyInfo_chipmunk.cpp
+         CCPhysicsContactInfo_chipmunk.cpp
+         CCPhysicsJointInfo_chipmunk.cpp
+         CCPhysicsShapeInfo_chipmunk.cpp
+         CCPhysicsWorldInfo_chipmunk.cpp
+         base64.cpp
+         CCAction.cpp
+         CCActionCamera.cpp
+         CCActionCatmullRom.cpp
+         CCActionEase.cpp
+         CCActionGrid.cpp
+         CCActionGrid3D.cpp
+         CCActionInstant.cpp
+     1>..\base\CCConsole.cpp(802): warning C4018: '<' : signed/unsigned mismatch
+         CCActionInterval.cpp
+         CCActionManager.cpp
+         CCActionPageTurn3D.cpp
+         CCActionProgressTimer.cpp
+         CCActionTiledGrid.cpp
+         CCActionTween.cpp
+     1>CCActionCatmullRom.cpp(134): warning C4018: '>' : signed/unsigned mismatch
+         CCAnimation.cpp
+         CCAnimationCache.cpp
+         CCAtlasNode.cpp
+         ccCArray.cpp
+         CCClippingNode.cpp
+         CCComponent.cpp
+         CCComponentContainer.cpp
+         CCConfiguration.cpp
+         CCDeprecated.cpp
+         CCDirector.cpp
+         CCDrawingPrimitives.cpp
+         CCDrawNode.cpp
+         CCEvent.cpp
+         CCEventAcceleration.cpp
+         CCEventCustom.cpp
+         CCEventDispatcher.cpp
+         CCEventKeyboard.cpp
+         CCEventListener.cpp
+         CCEventListenerAcceleration.cpp
+         CCEventListenerCustom.cpp
+         CCEventListenerKeyboard.cpp
+         CCEventListenerMouse.cpp
+         CCEventListenerTouch.cpp
+         CCEventMouse.cpp
+         CCEventTouch.cpp
+         CCFont.cpp
+         CCFontAtlas.cpp
+         CCFontAtlasCache.cpp
+         CCFontCharMap.cpp
+         CCFontFNT.cpp
+         CCFontFreeType.cpp
+         ccFPSImages.c
+         CCGLProgram.cpp
+         ccGLStateCache.cpp
+         CCGrabber.cpp
+         CCGrid.cpp
+         CCNodeGrid.cpp
+         CCIMEDispatcher.cpp
+         CCLabel.cpp
+         CCLabelAtlas.cpp
+         CCLabelBMFont.cpp
+         CCLabelTextFormatter.cpp
+         CCLabelTTF.cpp
+         CCLayer.cpp
+         CCMenu.cpp
+         CCMenuItem.cpp
+         CCMotionStreak.cpp
+         CCNode.cpp
+         CCNotificationCenter.cpp
+         CCParallaxNode.cpp
+         CCParticleBatchNode.cpp
+         CCParticleExamples.cpp
+         CCParticleSystem.cpp
+         CCParticleSystemQuad.cpp
+         CCProfiling.cpp
+         CCProgressTimer.cpp
+         CCRenderTexture.cpp
+         CCScene.cpp
+         CCScheduler.cpp
+         CCScriptSupport.cpp
+         CCShaderCache.cpp
+         ccShaders.cpp
+         CCSprite.cpp
+         CCSpriteBatchNode.cpp
+         CCSpriteFrame.cpp
+         CCSpriteFrameCache.cpp
+         CCTextFieldTTF.cpp
+         CCTexture2D.cpp
+         CCTextureAtlas.cpp
+         CCTextureCache.cpp
+         CCTileMapAtlas.cpp
+         CCTMXLayer.cpp
+         CCTMXObjectGroup.cpp
+         CCTMXTiledMap.cpp
+         CCTMXXMLParser.cpp
+         CCTouch.cpp
+         CCTransition.cpp
+         CCTransitionPageTurn.cpp
+         CCTransitionProgress.cpp
+         ccTypes.cpp
+         CCTweenFunction.cpp
+         CCUserDefault.cpp
+         ccUTF8.cpp
+         ccUtils.cpp
+         CCVertex.cpp
+         cocos2d.cpp
+         CCGLViewProtocol.cpp
+         CCFileUtils.cpp
+         CCImage.cpp
+         CCSAXParser.cpp
+         CCThread.cpp
+         CCGLView.cpp
+         CCApplication.cpp
+         CCCommon.cpp
+         CCDevice.cpp
+         CCFileUtilsWin32.cpp
+         CCStdC.cpp
+         CCBatchCommand.cpp
+         CCCustomCommand.cpp
+         CCFrustum.cpp
+         CCGroupCommand.cpp
+         CCMaterialManager.cpp
+         CCQuadCommand.cpp
+         CCRenderCommand.cpp
+         CCRenderer.cpp
+         CCRenderMaterial.cpp
+         TGAlib.cpp
+         TransformUtils.cpp
+     1>f:\games\flappybird\cocos2d\cocos\2d\platform\win32\CCFileUtilsWin32.h(100): warning C4996: 'cocos2d::FileUtils::getFileData': was declared deprecated (platform\win32\CCFileUtilsWin32.cpp)
+                 F:\Games\FlappyBird\cocos2d\cocos\2d\platform/CCFileUtils.h(101) : see declaration of 'cocos2d::FileUtils::getFileData'
+         ZipUtils.cpp
+     1>renderer\CCRenderer.cpp(71): warning C4018: '<' : signed/unsigned mismatch
+     1>renderer\CCRenderer.cpp(76): warning C4018: '<' : signed/unsigned mismatch
+     1>renderer\CCRenderer.cpp(81): warning C4018: '<' : signed/unsigned mismatch
+     1>renderer\CCRenderer.cpp(355): warning C4018: '>=' : signed/unsigned mismatch
+       PreLinkEvent:
+         if not exist "F:\Games\FlappyBird\proj.win32\Release.win32\" mkdir "F:\Games\FlappyBird\proj.win32\Release.win32\"
+         xcopy /Y /Q "F:\Games\FlappyBird\cocos2d\cocos\2d\..\..\external\freetype2\prebuilt\win32\*.*" "F:\Games\FlappyBird\proj.win32\Release.win32\"
+         xcopy /Y /Q "F:\Games\FlappyBird\cocos2d\cocos\2d\..\..\external\glfw3\prebuilt\win32\*.*" "F:\Games\FlappyBird\proj.win32\Release.win32\"
+         xcopy /Y /Q "F:\Games\FlappyBird\cocos2d\cocos\2d\..\..\external\curl\prebuilt\win32\*.*" "F:\Games\FlappyBird\proj.win32\Release.win32\"
+         xcopy /Y /Q "F:\Games\FlappyBird\cocos2d\cocos\2d\..\..\external\jpeg\prebuilt\win32\*.*" "F:\Games\FlappyBird\proj.win32\Release.win32\"
+         xcopy /Y /Q "F:\Games\FlappyBird\cocos2d\cocos\2d\..\..\external\png\prebuilt\win32\*.*" "F:\Games\FlappyBird\proj.win32\Release.win32\"
+         xcopy /Y /Q "F:\Games\FlappyBird\cocos2d\cocos\2d\..\..\external\tiff\prebuilt\win32\*.*" "F:\Games\FlappyBird\proj.win32\Release.win32\"
+         xcopy /Y /Q "F:\Games\FlappyBird\cocos2d\cocos\2d\..\..\external\webp\prebuilt\win32\*.*" "F:\Games\FlappyBird\proj.win32\Release.win32\"
+         xcopy /Y /Q "F:\Games\FlappyBird\cocos2d\cocos\2d\..\..\external\win32-specific\zlib\prebuilt\*.*" "F:\Games\FlappyBird\proj.win32\Release.win32\"
+         xcopy /Y /Q "F:\Games\FlappyBird\cocos2d\cocos\2d\..\..\external\win32-specific\icon\prebuilt\*.*" "F:\Games\FlappyBird\proj.win32\Release.win32\"
+         xcopy /Y /Q "F:\Games\FlappyBird\cocos2d\cocos\2d\..\..\external\win32-specific\gles\prebuilt\*.*" "F:\Games\FlappyBird\proj.win32\Release.win32\"
+         
+         :VCEnd
+         1 File(s) copied
+         1 File(s) copied
+         2 File(s) copied
+         1 File(s) copied
+         1 File(s) copied
+         2 File(s) copied
+         1 File(s) copied
+         2 File(s) copied
+         2 File(s) copied
+         2 File(s) copied
+       Lib:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\Lib.exe /OUT:"F:\Games\FlappyBird\proj.win32\Release.win32\libcocos2d.lib" /NOLOGO Release.win32\edtaa3func.obj
+         Release.win32\tinyxml2.obj
+         Release.win32\ioapi.obj
+         Release.win32\unzip.obj
+         Release.win32\atitc.obj
+         Release.win32\CCAffineTransform.obj
+         Release.win32\CCArray.obj
+         Release.win32\CCAutoreleasePool.obj
+         Release.win32\CCConsole.obj
+         Release.win32\CCData.obj
+         Release.win32\CCDataVisitor.obj
+         Release.win32\CCDictionary.obj
+         Release.win32\CCGeometry.obj
+         Release.win32\CCNS.obj
+         Release.win32\CCRef.obj
+         Release.win32\CCSet.obj
+         Release.win32\CCString.obj
+         Release.win32\CCValue.obj
+         Release.win32\etc1.obj
+         Release.win32\s3tc.obj
+         Release.win32\aabb.obj
+         Release.win32\mat4stack.obj
+         Release.win32\matrix.obj
+         Release.win32\mat3.obj
+         Release.win32\mat4.obj
+         Release.win32\neon_matrix_impl.obj
+         Release.win32\plane.obj
+         Release.win32\quaternion.obj
+         Release.win32\ray2.obj
+         Release.win32\ray3.obj
+         Release.win32\utility.obj
+         Release.win32\vec2.obj
+         Release.win32\vec3.obj
+         Release.win32\vec4.obj
+         Release.win32\CCPhysicsBody.obj
+         Release.win32\CCPhysicsContact.obj
+         Release.win32\CCPhysicsJoint.obj
+         Release.win32\CCPhysicsShape.obj
+         Release.win32\CCPhysicsWorld.obj
+         Release.win32\CCPhysicsBodyInfo_chipmunk.obj
+         Release.win32\CCPhysicsContactInfo_chipmunk.obj
+         Release.win32\CCPhysicsJointInfo_chipmunk.obj
+         Release.win32\CCPhysicsShapeInfo_chipmunk.obj
+         Release.win32\CCPhysicsWorldInfo_chipmunk.obj
+         Release.win32\base64.obj
+         Release.win32\CCAction.obj
+         Release.win32\CCActionCamera.obj
+         Release.win32\CCActionCatmullRom.obj
+         Release.win32\CCActionEase.obj
+         Release.win32\CCActionGrid.obj
+         Release.win32\CCActionGrid3D.obj
+         Release.win32\CCActionInstant.obj
+         Release.win32\CCActionInterval.obj
+         Release.win32\CCActionManager.obj
+         Release.win32\CCActionPageTurn3D.obj
+         Release.win32\CCActionProgressTimer.obj
+         Release.win32\CCActionTiledGrid.obj
+         Release.win32\CCActionTween.obj
+         Release.win32\CCAnimation.obj
+         Release.win32\CCAnimationCache.obj
+         Release.win32\CCAtlasNode.obj
+         Release.win32\ccCArray.obj
+         Release.win32\CCClippingNode.obj
+         Release.win32\CCComponent.obj
+         Release.win32\CCComponentContainer.obj
+         Release.win32\CCConfiguration.obj
+         Release.win32\CCDeprecated.obj
+         Release.win32\CCDirector.obj
+         Release.win32\CCDrawingPrimitives.obj
+         Release.win32\CCDrawNode.obj
+         Release.win32\CCEvent.obj
+         Release.win32\CCEventAcceleration.obj
+         Release.win32\CCEventCustom.obj
+         Release.win32\CCEventDispatcher.obj
+         Release.win32\CCEventKeyboard.obj
+         Release.win32\CCEventListener.obj
+         Release.win32\CCEventListenerAcceleration.obj
+         Release.win32\CCEventListenerCustom.obj
+         Release.win32\CCEventListenerKeyboard.obj
+         Release.win32\CCEventListenerMouse.obj
+         Release.win32\CCEventListenerTouch.obj
+         Release.win32\CCEventMouse.obj
+         Release.win32\CCEventTouch.obj
+         Release.win32\CCFont.obj
+         Release.win32\CCFontAtlas.obj
+         Release.win32\CCFontAtlasCache.obj
+         Release.win32\CCFontCharMap.obj
+         Release.win32\CCFontFNT.obj
+         Release.win32\CCFontFreeType.obj
+         Release.win32\ccFPSImages.obj
+         Release.win32\CCGLProgram.obj
+         Release.win32\ccGLStateCache.obj
+         Release.win32\CCGrabber.obj
+         Release.win32\CCGrid.obj
+         Release.win32\CCNodeGrid.obj
+         Release.win32\CCIMEDispatcher.obj
+         Release.win32\CCLabel.obj
+         Release.win32\CCLabelAtlas.obj
+         Release.win32\CCLabelBMFont.obj
+         Release.win32\CCLabelTextFormatter.obj
+         Release.win32\CCLabelTTF.obj
+         Release.win32\CCLayer.obj
+         Release.win32\CCMenu.obj
+         Release.win32\CCMenuItem.obj
+         Release.win32\CCMotionStreak.obj
+         Release.win32\CCNode.obj
+         Release.win32\CCNotificationCenter.obj
+         Release.win32\CCParallaxNode.obj
+         Release.win32\CCParticleBatchNode.obj
+         Release.win32\CCParticleExamples.obj
+         Release.win32\CCParticleSystem.obj
+         Release.win32\CCParticleSystemQuad.obj
+         Release.win32\CCProfiling.obj
+         Release.win32\CCProgressTimer.obj
+         Release.win32\CCRenderTexture.obj
+         Release.win32\CCScene.obj
+         Release.win32\CCScheduler.obj
+         Release.win32\CCScriptSupport.obj
+         Release.win32\CCShaderCache.obj
+         Release.win32\ccShaders.obj
+         Release.win32\CCSprite.obj
+         Release.win32\CCSpriteBatchNode.obj
+         Release.win32\CCSpriteFrame.obj
+         Release.win32\CCSpriteFrameCache.obj
+         Release.win32\CCTextFieldTTF.obj
+         Release.win32\CCTexture2D.obj
+         Release.win32\CCTextureAtlas.obj
+         Release.win32\CCTextureCache.obj
+         Release.win32\CCTileMapAtlas.obj
+         Release.win32\CCTMXLayer.obj
+         Release.win32\CCTMXObjectGroup.obj
+         Release.win32\CCTMXTiledMap.obj
+         Release.win32\CCTMXXMLParser.obj
+         Release.win32\CCTouch.obj
+         Release.win32\CCTransition.obj
+         Release.win32\CCTransitionPageTurn.obj
+         Release.win32\CCTransitionProgress.obj
+         Release.win32\ccTypes.obj
+         Release.win32\CCTweenFunction.obj
+         Release.win32\CCUserDefault.obj
+         Release.win32\ccUTF8.obj
+         Release.win32\ccUtils.obj
+         Release.win32\CCVertex.obj
+         Release.win32\cocos2d.obj
+         Release.win32\CCGLViewProtocol.obj
+         Release.win32\CCFileUtils.obj
+         Release.win32\CCImage.obj
+         Release.win32\CCSAXParser.obj
+         Release.win32\CCThread.obj
+         Release.win32\CCGLView.obj
+         Release.win32\CCApplication.obj
+         Release.win32\CCCommon.obj
+         Release.win32\CCDevice.obj
+         Release.win32\CCFileUtilsWin32.obj
+         Release.win32\CCStdC.obj
+         Release.win32\CCBatchCommand.obj
+         Release.win32\CCCustomCommand.obj
+         Release.win32\CCFrustum.obj
+         Release.win32\CCGroupCommand.obj
+         Release.win32\CCMaterialManager.obj
+         Release.win32\CCQuadCommand.obj
+         Release.win32\CCRenderCommand.obj
+         Release.win32\CCRenderer.obj
+         Release.win32\CCRenderMaterial.obj
+         Release.win32\TGAlib.obj
+         Release.win32\TransformUtils.obj
+         Release.win32\ZipUtils.obj
+         cocos2d.vcxproj -> F:\Games\FlappyBird\proj.win32\Release.win32\libcocos2d.lib
+       FinalizeBuildStatus:
+         Deleting file "Release.win32\libcocos2d.unsuccessfulbuild".
+         Touching "Release.win32\libcocos2d.lastbuildstate".
+     1>Done Building Project "F:\Games\FlappyBird\cocos2d\cocos\2d\cocos2d.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:46.63

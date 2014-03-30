@@ -35,7 +35,7 @@ public:
     
 protected:
     virtual bool init() override;
-    void start(Object* pSender);
+    void start(cocos2d::Object* pSender);
     // virtual void onTouchesEnded(const std::vector<cocos2d::Touch*>& touches, cocos2d::Event *unused_event);    
 };
 
