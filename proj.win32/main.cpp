@@ -1,5 +1,6 @@
 #include "main.h"
 #include "AppDelegate.h"
+#include "cocos2d.h"
 
 USING_NS_CC;
 
@@ -13,7 +14,5 @@ int APIENTRY _tWinMain(HINSTANCE hInstance,
 
     // create the application instance
     AppDelegate app;
-    EGLView eglView;
-    eglView.init("FlappyBird",480,480*1.775);
     return Application::getInstance()->run();
 }

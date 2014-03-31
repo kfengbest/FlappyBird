@@ -21,7 +21,7 @@ public:
     /// event reactions
 	virtual void onTouchesEnded(const vector<Touch*>& touches, Event* event) override;
 	virtual void onTouchesBegan(const vector<Touch*>& touches, Event* event) override;
-    virtual bool onContactBegin(EventCustom* event, const PhysicsContact& contact);
+    virtual bool onContactBegin(PhysicsContact& contact);
 
 protected:
     /// <description>
@@ -63,6 +63,11 @@ protected:
     /// Get the Hero bird
     /// </description>
     Sprite* Hero();
+
+    /// <description>
+    /// Get the terrain
+    /// </description>
+    Terrain* getTerrain();
 
     /// <description>
     /// Get the PhysicsWorld

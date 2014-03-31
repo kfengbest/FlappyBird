@@ -135,6 +135,17 @@ xcopy /Y /Q "$(EngineRoot)external\websockets\prebuilt\win32\*.*" "$(OutDir)"</C
   <ItemGroup>
     <ClCompile Include="..\Classes\AppDelegate.cpp" />
     <ClCompile Include="..\Classes\FlappyBirdLayer.cpp" />
+    <ClCompile Include="..\Classes\Naga\MemPool.cpp" />
+    <ClCompile Include="..\Classes\Naga\Object.cpp" />
+    <ClCompile Include="..\Classes\Naga\UniqueString.cpp" />
+    <ClCompile Include="..\Classes\Naga\Utility.cpp" />
+    <ClCompile Include="..\Classes\Objects\DynamicTexture.cpp" />
+    <ClCompile Include="..\Classes\Objects\Framebuffer.cpp" />
+    <ClCompile Include="..\Classes\Objects\HSV.cpp" />
+    <ClCompile Include="..\Classes\Objects\Sky.cpp" />
+    <ClCompile Include="..\Classes\Objects\Terrain.cpp" />
+    <ClCompile Include="..\Classes\Objects\TextureGenerator.cpp" />
+    <ClCompile Include="..\Classes\Util\PhysicsHelper.cpp" />
     <ClCompile Include="..\Classes\WelcomeScene.cpp" />
     <ClCompile Include="main.cpp" />
   </ItemGroup>
@@ -142,6 +153,29 @@ xcopy /Y /Q "$(EngineRoot)external\websockets\prebuilt\win32\*.*" "$(OutDir)"</C
     <ClInclude Include="..\Classes\AppDelegate.h" />
     <ClInclude Include="..\Classes\FlappyBirdLayer.h" />
     <ClInclude Include="..\Classes\Impl.h" />
+    <ClInclude Include="..\Classes\Naga\BitStatus.h" />
+    <ClInclude Include="..\Classes\Naga\Constants.h" />
+    <ClInclude Include="..\Classes\Naga\InterfaceID.h" />
+    <ClInclude Include="..\Classes\Naga\MemPool.h" />
+    <ClInclude Include="..\Classes\Naga\NagaLib.h" />
+    <ClInclude Include="..\Classes\Naga\Object.h" />
+    <ClInclude Include="..\Classes\Naga\Platform.h" />
+    <ClInclude Include="..\Classes\Naga\RefCounted.h" />
+    <ClInclude Include="..\Classes\Naga\Singleton.h" />
+    <ClInclude Include="..\Classes\Naga\SmartPointer.h" />
+    <ClInclude Include="..\Classes\Naga\StdInclude.h" />
+    <ClInclude Include="..\Classes\Naga\UniqueString.h" />
+    <ClInclude Include="..\Classes\Naga\Utility.h" />
+    <ClInclude Include="..\Classes\Objects\DynamicTexture.h" />
+    <ClInclude Include="..\Classes\Objects\Framebuffer.h" />
+    <ClInclude Include="..\Classes\Objects\Random.h" />
+    <ClInclude Include="..\Classes\Objects\Sky.h" />
+    <ClInclude Include="..\Classes\Objects\Terrain.h" />
+    <ClInclude Include="..\Classes\Objects\TextureGenerator.h" />
+    <ClInclude Include="..\Classes\Objects\VertexBuffer.h" />
+    <ClInclude Include="..\Classes\Objects\VertexTraits.h" />
+    <ClInclude Include="..\Classes\Objects\VertexTypes.h" />
+    <ClInclude Include="..\Classes\Util\PhysicsHelper.h" />
     <ClInclude Include="..\Classes\WelcomeScene.h" />
     <ClInclude Include="main.h" />
   </ItemGroup>
